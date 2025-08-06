@@ -1,0 +1,95 @@
+{
+  "name": "focus-highlight-tool",
+  "displayName": "Focus Highlight Tool",
+  "description": "Highlight selected code and dim rest for better focus during recording.",
+  "version": "0.0.1",
+  "publisher": "your-publisher-name",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:focusHighlight.toggle",
+    "onCommand:focusHighlight.activate",
+    "onCommand:focusHighlight.deactivate",
+    "onCommand:focusHighlight.clear",
+    "onCommand:focusHighlight.startSelection"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "focusHighlight.toggle",
+        "title": "Toggle Focus Highlight",
+        "category": "Focus Highlight"
+      },
+      {
+        "command": "focusHighlight.activate",
+        "title": "Activate Focus Highlight",
+        "category": "Focus Highlight"
+      },
+      {
+        "command": "focusHighlight.deactivate",
+        "title": "Deactivate Focus Highlight",
+        "category": "Focus Highlight"
+      },
+      {
+        "command": "focusHighlight.clear",
+        "title": "Clear Focus Selection",
+        "category": "Focus Highlight"
+      },
+      {
+        "command": "focusHighlight.startSelection",
+        "title": "Select Line Range",
+        "category": "Focus Highlight"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "focusHighlight.toggle",
+        "key": "ctrl+alt+h",
+        "mac": "cmd+alt+h",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "focusHighlight.activate",
+        "key": "ctrl+j",
+        "mac": "cmd+j",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "focusHighlight.deactivate",
+        "key": "ctrl+shift+j",
+        "mac": "cmd+shift+j",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "focusHighlight.clear",
+        "key": "ctrl+shift+c",
+        "mac": "cmd+shift+c",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "focusHighlight.startSelection",
+        "key": "ctrl+shift+l",
+        "mac": "cmd+shift+l",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "package": "vsce package",
+    "install-local": "code --install-extension focus-highlight-tool-0.0.1.vsix"
+  },
+  "devDependencies": {
+    "@types/node": "16.x",
+    "@types/vscode": "^1.70.0",
+    "@vscode/test-electron": "^2.3.0",
+    "typescript": "^4.9.4",
+    "vsce": "^2.15.0"
+  }
+}
