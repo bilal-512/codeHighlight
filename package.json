@@ -4,6 +4,10 @@
   "description": "Highlight selected code and dim rest for better focus during recording.",
   "version": "0.0.1",
   "publisher": "bilal-dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bilal-512/codeHighlight.git"
+  },
   "engines": {
     "vscode": "^1.70.0"
   },
