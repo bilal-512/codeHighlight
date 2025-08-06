@@ -3,7 +3,7 @@
   "displayName": "Focus Highlight Tool",
   "description": "Highlight selected code and dim rest for better focus during recording.",
   "version": "0.0.1",
-  "publisher": "your-publisher-name",
+  "publisher": "bilal-dev",
   "engines": {
     "vscode": "^1.70.0"
   },
