@@ -2,7 +2,7 @@
   "name": "focus-highlight-tool",
   "displayName": "Focus Highlight Tool",
   "description": "Highlight selected code and dim rest for better focus during recording.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "bilal-dev",
   "repository": {
     "type": "git",
